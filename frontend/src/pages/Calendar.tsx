@@ -10,8 +10,6 @@ export function Calendar() {
   const [reminders, setReminders] = useState<EventReminder[]>([]);
   const [currentDate, setCurrentDate] = useState(new Date());
   const [showCreateForm, setShowCreateForm] = useState(false);
-  const [loading, setLoading] = useState(true);
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
 
   const [formData, setFormData] = useState({
     title: '',
@@ -43,8 +41,6 @@ export function Calendar() {
       }
     } catch (err) {
       setError('Failed to load calendar data');
-    } finally {
-      setLoading(false);
     }
   };
 
