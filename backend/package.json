@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Backend API for family website preview",
   "main": "src/index.ts",
-  "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",

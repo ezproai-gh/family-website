@@ -4,9 +4,9 @@ import 'dotenv/config';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 
-import { db } from './database.js';
-import { authenticateToken, requireAdmin, generateToken } from './middleware.js';
-import { User } from './types.js';
+import { db } from './database';
+import { authenticateToken, requireAdmin, generateToken } from './middleware';
+import { User } from './types';
 
 const app = express();
 const PORT = process.env.PORT || 5000;

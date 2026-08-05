@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { User, Event, Photo, EventReminder } from './types.js';
+import { User, Event, Photo, EventReminder } from './types';
 
 class Database {
   users: User[] = [];
