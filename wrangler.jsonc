@@ -1,0 +1,11 @@
+{
+  "name": "chrisjonesfamily-website",
+  "compatibility_date": "2026-08-10",
+  "assets": {
+    // Vite build output. This is what gets uploaded and served.
+    "directory": "./frontend/dist",
+    // React Router needs every unknown path to return index.html,
+    // otherwise /calendar, /gallery etc. 404 on refresh or direct link.
+    "not_found_handling": "single-page-application"
+  }
+}
