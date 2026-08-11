@@ -1,4 +1,6 @@
-const API_BASE = '/api';
+// In production, VITE_API_BASE points at the Railway backend.
+// In local dev it's unset, so we fall back to '' and let the Vite proxy handle /api.
+const API_BASE = `${import.meta.env.VITE_API_BASE || ''}/api`;
 
 export interface ApiResponse<T> {
   success: boolean;
